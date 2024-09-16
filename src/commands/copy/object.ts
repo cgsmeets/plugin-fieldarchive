@@ -15,9 +15,6 @@ import { existsSync, renameSync, readFileSync, writeFileSync, appendFileSync } f
 
 import { SfCommand, Flags } from '@salesforce/sf-plugins-core';
 import { Messages } from '@salesforce/core';
-import { parseJson } from '@salesforce/kit';
-import { Exit } from '@oclif/core/handle';
-// import { SaveResult } from ''
 Messages.importMessagesDirectoryFromMetaUrl(import.meta.url);
 const messages = Messages.loadMessages('@salesforce/plugin-fieldarchive', 'copy.object');
 
@@ -84,7 +81,6 @@ export default class CopyObject extends SfCommand<CopyObjectResult> {
 
     const q: string =
       'select ' + parentId + ',Id, CreatedDate, Datatype, CreatedById, Field from ' + source + 'History';
-    //  const q: string = 'select Id from account';
     let qr = await con.query(q);
     this.log('size of object: ' + qr.totalSize);
     let allDone: boolean = false;
@@ -102,12 +98,12 @@ export default class CopyObject extends SfCommand<CopyObjectResult> {
           t = l.get(blockCount) as FieldArchive[];
 
           t.push({
-            ULTEST__ParentId__c: f['Id'] as string,
-            ULTEST__Field__c: '123',
-            ULTEST__DataType__c: '123',
-            ULTEST__CreatedDate__c: new Date(),
-            ULTEST__LegacyId__c: '123',
-            ULTEST__CreatedById__c: '123',
+            ULTEST__ParentId__c: f[parentId] as string,
+            ULTEST__Field__c: f['Field'] as string,
+            ULTEST__DataType__c: f['Datatype'] as string,
+            ULTEST__CreatedDate__c: f['CreatedDate'] as Date,
+            ULTEST__LegacyId__c: f['Id'] as string,
+            ULTEST__CreatedById__c: f['CreatedById'] as string,
           });
 
           if (t.length === 200) {
