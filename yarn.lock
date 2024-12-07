@@ -1397,13 +1397,12 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@jsforce/jsforce-node@^3.4.1":
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/@jsforce/jsforce-node/-/jsforce-node-3.4.1.tgz#36f5cba775b395eeedba676a78eafe447c3f4b28"
-  integrity sha512-PsBKfglH0/8W/Srr4LsxEFsVmjmZjEj/T4XLGpbBoK8yVObwbiMk4VqwA6XwiA6SHqnEqqQbHZxk2rr7dZC+4A==
+"@jsforce/jsforce-node@^3.6.1":
+  version "3.6.3"
+  resolved "https://registry.yarnpkg.com/@jsforce/jsforce-node/-/jsforce-node-3.6.3.tgz#a5c984b6deffac01ddabc3f4b48374408c5cd194"
+  integrity sha512-sNUeBzfUv57uH0AiYuAOO8yjBP7lNY33mWybrjvBud8gMFVWozY6UAWU1DUk/dpqZ0+FK3iqB++nOQRczj1nSg==
   dependencies:
     "@sindresorhus/is" "^4"
-    abort-controller "^3.0.0"
     base64url "^3.0.1"
     csv-parse "^5.5.2"
     csv-stringify "^6.4.4"
@@ -1412,7 +1411,6 @@
     https-proxy-agent "^5.0.0"
     multistream "^3.1.0"
     node-fetch "^2.6.1"
-    strip-ansi "^6.0.0"
     xml2js "^0.6.2"
 
 "@nodelib/fs.scandir@2.1.5":
@@ -1507,28 +1505,28 @@
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
-"@salesforce/cli-plugins-testkit@^5.3.30":
-  version "5.3.30"
-  resolved "https://registry.yarnpkg.com/@salesforce/cli-plugins-testkit/-/cli-plugins-testkit-5.3.30.tgz#43468c526b054f495e498a5d494ea3b56347b138"
-  integrity sha512-CnmzrN9gzqIg5NnpwmCmxrq7PtrfqivpV/nDXwHQNSru6Ug6OAqNQGHziLnurzH/UxzHUuv1IL2e6E5ZVRjJoQ==
+"@salesforce/cli-plugins-testkit@^5.3.39":
+  version "5.3.39"
+  resolved "https://registry.yarnpkg.com/@salesforce/cli-plugins-testkit/-/cli-plugins-testkit-5.3.39.tgz#97218016503fc19194509cc603752de4f2baceae"
+  integrity sha512-6cBN7PP3/BN11qv/RGilJdWOkSEGGh6eIzyE+tZI27s2KLf/aOysbZk90v9yhSnuxvPiREHzYCuNSufJlsciQQ==
   dependencies:
-    "@salesforce/core" "^8.5.4"
-    "@salesforce/kit" "^3.2.1"
+    "@salesforce/core" "^8.8.0"
+    "@salesforce/kit" "^3.2.3"
     "@salesforce/ts-types" "^2.0.11"
     "@types/shelljs" "^0.8.15"
-    debug "^4.3.7"
+    debug "^4.4.0"
     jszip "^3.10.1"
     shelljs "^0.8.4"
     sinon "^17.0.2"
     strip-ansi "6.0.1"
     ts-retry-promise "^0.8.1"
 
-"@salesforce/core@^8.3.0", "@salesforce/core@^8.5.1", "@salesforce/core@^8.5.2", "@salesforce/core@^8.5.4":
-  version "8.5.4"
-  resolved "https://registry.yarnpkg.com/@salesforce/core/-/core-8.5.4.tgz#1cdd669462d2c2859b72135d1138a1b790b1fbcc"
-  integrity sha512-dO8tzFxq811qNPeKPPO2OA2KPYW5rO0YRinW/+7zmRJW3EtNpe93dsQVGwBSAAYrSbYeBwiKdliNqNTN7tKJ0A==
+"@salesforce/core@^8.3.0", "@salesforce/core@^8.5.1", "@salesforce/core@^8.5.2", "@salesforce/core@^8.5.4", "@salesforce/core@^8.8.0":
+  version "8.8.0"
+  resolved "https://registry.yarnpkg.com/@salesforce/core/-/core-8.8.0.tgz#849c07ea3a2548ca201fc0fe8baef9b36a462194"
+  integrity sha512-HWGdRiy/MPCJ2KHz+W+cnqx0O9xhx9+QYvwP8bn9PE27wj0A/NjTi4xrqIWk1M+fE4dXHycE+8qPf4b540euvg==
   dependencies:
-    "@jsforce/jsforce-node" "^3.4.1"
+    "@jsforce/jsforce-node" "^3.6.1"
     "@salesforce/kit" "^3.2.2"
     "@salesforce/schemas" "^1.9.0"
     "@salesforce/ts-types" "^2.0.10"
@@ -1540,7 +1538,7 @@
     js2xmlparser "^4.0.1"
     jsonwebtoken "9.0.2"
     jszip "3.10.1"
-    pino "^9.3.2"
+    pino "^9.4.0"
     pino-abstract-transport "^1.2.0"
     pino-pretty "^11.2.2"
     proper-lockfile "^4.1.2"
@@ -1584,10 +1582,10 @@
     typescript "^5.5.4"
     wireit "^0.14.5"
 
-"@salesforce/kit@^3.2.1", "@salesforce/kit@^3.2.2":
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/@salesforce/kit/-/kit-3.2.2.tgz#2a0db472116a416cb12b510d546cb35a582d619a"
-  integrity sha512-Qh+Jx65LKR3BlH+bxNBbvI4+/+/igAJ9x2iEDM3tHb3B2JCEnssPP0lw+K/zWHsdtk+OorBiKpHaC6RrjW+9fw==
+"@salesforce/kit@^3.2.1", "@salesforce/kit@^3.2.2", "@salesforce/kit@^3.2.3":
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/@salesforce/kit/-/kit-3.2.3.tgz#a7293c384ef6133191fe3590e604e3896fdecf4a"
+  integrity sha512-X8rZouLt06dxRkn+uYTwywWDS/NqZ783AyomGqgtWdUxF61EOJvu0ehtcYeutx9Ng08uuZ+s6wNvWiDsdhUcPg==
   dependencies:
     "@salesforce/ts-types" "^2.0.12"
 
@@ -3270,10 +3268,10 @@ dateformat@^4.6.3:
   resolved "https://registry.yarnpkg.com/dateformat/-/dateformat-4.6.3.tgz#556fa6497e5217fedb78821424f8a1c22fa3f4b5"
   integrity sha512-2P0p0pFGzHS5EMnhdxQi7aJN+iMheud0UhG4dlE1DLAlvL8JHjJJTX/CSm4JXwV0Ka5nGk3zC5mcb5bUQUxxMA==
 
-debug@4, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.2, debug@^4.3.4, debug@^4.3.5, debug@^4.3.6, debug@^4.3.7:
-  version "4.3.7"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.7.tgz#87945b4151a011d76d95a198d7111c865c360a52"
-  integrity sha512-Er2nc/H7RrMXZBFCEim6TCmMk02Z8vLC2Rbi1KEBggpo0fS6l0S1nnapwmIi3yW/+GOJap1Krg4w0Hg80oCqgQ==
+debug@4, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.2, debug@^4.3.4, debug@^4.3.5, debug@^4.3.6, debug@^4.3.7, debug@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.4.0.tgz#2b3f2aea2ffeb776477460267377dc8710faba8a"
+  integrity sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==
   dependencies:
     ms "^2.1.3"
 
@@ -5976,6 +5974,13 @@ pino-abstract-transport@^1.0.0, pino-abstract-transport@^1.2.0:
     readable-stream "^4.0.0"
     split2 "^4.0.0"
 
+pino-abstract-transport@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/pino-abstract-transport/-/pino-abstract-transport-2.0.0.tgz#de241578406ac7b8a33ce0d77ae6e8a0b3b68a60"
+  integrity sha512-F63x5tizV6WCh4R6RHyi2Ml+M70DNRXt/+HANowMflpgGFMAym/VKm6G7ZOQRjqN7XbGxK1Lg9t6ZrtzOaivMw==
+  dependencies:
+    split2 "^4.0.0"
+
 pino-pretty@^11.2.2:
   version "11.2.2"
   resolved "https://registry.yarnpkg.com/pino-pretty/-/pino-pretty-11.2.2.tgz#5e8ec69b31e90eb187715af07b1d29a544e60d39"
@@ -6001,15 +6006,15 @@ pino-std-serializers@^7.0.0:
   resolved "https://registry.yarnpkg.com/pino-std-serializers/-/pino-std-serializers-7.0.0.tgz#7c625038b13718dbbd84ab446bd673dc52259e3b"
   integrity sha512-e906FRY0+tV27iq4juKzSYPbUj2do2X2JX4EzSca1631EB2QJQUqGbDuERal7LCtOpxl6x3+nvo9NPZcmjkiFA==
 
-pino@^9.3.2:
-  version "9.3.2"
-  resolved "https://registry.yarnpkg.com/pino/-/pino-9.3.2.tgz#a530d6d28f1d954b6f54416a218cbb616f52f901"
-  integrity sha512-WtARBjgZ7LNEkrGWxMBN/jvlFiE17LTbBoH0konmBU684Kd0uIiDwBXlcTCW7iJnA6HfIKwUssS/2AC6cDEanw==
+pino@^9.4.0:
+  version "9.5.0"
+  resolved "https://registry.yarnpkg.com/pino/-/pino-9.5.0.tgz#a7ef0fea868d22d52d8a4ce46e6e03c5dc46fdd6"
+  integrity sha512-xSEmD4pLnV54t0NOUN16yCl7RIB1c5UUOse5HSyEXtBp+FgFQyPeDutc+Q2ZO7/22vImV7VfEjH/1zV2QuqvYw==
   dependencies:
     atomic-sleep "^1.0.0"
     fast-redact "^3.1.1"
     on-exit-leak-free "^2.1.0"
-    pino-abstract-transport "^1.2.0"
+    pino-abstract-transport "^2.0.0"
     pino-std-serializers "^7.0.0"
     process-warning "^4.0.0"
     quick-format-unescaped "^4.0.3"
